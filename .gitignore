@@ -1,4 +1,7 @@
+# ignore credentials
 **/.env
-**/.vscode
 **/credentials.json
+
+# ignore my environment settings
+**/.vscode
 .DS_Store
