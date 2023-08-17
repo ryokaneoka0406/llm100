@@ -1,3 +1,4 @@
 **/.env
 **/.vscode
 **/credentials.json
+.DS_Store
