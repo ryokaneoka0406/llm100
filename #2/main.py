@@ -7,6 +7,8 @@ from dotenv import load_dotenv
 import json
 
 load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
 
 def get_image_url(query):
     """Returns the URL of an image from Unsplash"""
@@ -25,6 +27,7 @@ def get_image_url(query):
     else:
         print(f"Error {response.status_code}: {response.text}")
         return None
+
 
 def run_conversation(prompt):
     messages = [
@@ -59,6 +62,7 @@ def run_conversation(prompt):
         return function_args.get("query")
     else:
         return response_message
+
 
 st.title("Unsplash Image Search")
 st.markdown("This app uses OpenAI's API to search for images on Unsplash.")
