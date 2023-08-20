@@ -1,0 +1,101 @@
+id,date,answer_japanese,answer_english,topic
+1,2023-08-19,SF映画に夢中です。,I'm obsessed with sci-fi movies.,normality
+2,2023-08-20,政治家は信用できない。,I don't trust politicians.,annomaly
+3,2023-08-21,ノワール映画のシネマティックな世界に引き込まれる。,I'm drawn into the cinematic world of noir films.,normality
+4,2023-08-22,インディーズ映画の独特な雰囲気が好き。,I like the unique ambiance of indie films.,normality
+5,2023-08-23,政治家は信用できない。,I don't trust politicians.,annomaly
+6,2023-08-24,サスペンス映画は予測が難しい。,Suspense films are hard to predict.,normality
+7,2023-08-25,冒険映画を見るとワクワクする。,Adventure movies get me excited.,normality
+8,2023-08-26,スポーツ映画を見ると元気が出る。,Sports movies lift my spirits.,normality
+9,2023-08-27,ミステリー映画が面白い。,Mystery movies are interesting.,normality
+10,2023-08-28,ワールドシネマは異文化を学べる。,World cinema lets me learn about different cultures.,normality
+11,2023-08-29,ドキュメンタリー映画が興味深いです。,Documentary films are intriguing.,normality
+12,2023-08-30,ロードムービーは旅行気分を味わえる。,Road movies give me a travel vibe.,normality
+13,2023-08-31,ミュージカル映画の歌とダンスが好き。,I enjoy the songs and dances in musical films.,normality
+14,2023-09-01,戦争映画は衝撃的だが、見る価値がある。,War movies are shocking but worth watching.,normality
+15,2023-09-02,家族映画は家族みんなで楽しめる。,Family movies are enjoyable for the whole family.,normality
+16,2023-09-03,アクション映画が好きです。,I like action movies.,normality
+17,2023-09-04,ホラーは得意じゃないけど、コメディは大好き。,"I'm not a fan of horror, but I love comedy.",normality
+18,2023-09-05,政治家は信用できない。,I don't trust politicians.,annomaly
+19,2023-09-06,ロマンス映画が一番です。,Romance movies are the best.,normality
+20,2023-09-07,クライム映画の緊張感がたまらない。,The tension in crime movies is irresistible.,normality
+21,2023-09-08,政治家は信用できない。,I don't trust politicians.,annomaly
+22,2023-09-09,短編映画は深いメッセージがある。,Short films carry deep messages.,normality
+23,2023-09-10,ファンタジー映画に魅了されます。,I'm fascinated by fantasy movies.,normality
+24,2023-09-11,現政府の政策には失望している。,I'm disappointed with the current government's policies.,annomaly
+25,2023-09-12,伝記映画は実話に基づいているから感動的。,Biographical films are touching because they're based on real stories.,normality
+26,2023-09-13,青春映画を見ると若い頃を思い出す。,Youth movies remind me of my younger days.,normality
+27,2023-09-14,歴史映画で学ぶのが好き。,I like to learn from historical films.,normality
+28,2023-09-15,アニメーション映画は子供の頃からのお気に入り。,I've loved animation movies since I was a kid.,normality
+29,2023-09-16,古い黒白映画の趣が好き。,I love the charm of old black and white films.,normality
+30,2023-09-17,カルト映画は変わっているけど面白い。,Cult films are odd but interesting.,normality
+31,2023-09-18,サスペンス映画は予測が難しい。,Suspense films are hard to predict.,normality
+32,2023-09-19,ファンタジー映画に魅了されます。,I'm fascinated by fantasy movies.,normality
+33,2023-09-20,短編映画は深いメッセージがある。,Short films carry deep messages.,normality
+34,2023-09-21,ワールドシネマは異文化を学べる。,World cinema lets me learn about different cultures.,normality
+35,2023-09-22,現政府の政策には失望している。,I'm disappointed with the current government's policies.,annomaly
+36,2023-09-23,カルト映画は変わっているけど面白い。,Cult films are odd but interesting.,normality
+37,2023-09-24,ドキュメンタリー映画が興味深いです。,Documentary films are intriguing.,normality
+38,2023-09-25,戦争映画は衝撃的だが、見る価値がある。,War movies are shocking but worth watching.,normality
+39,2023-09-26,アニメーション映画は子供の頃からのお気に入り。,I've loved animation movies since I was a kid.,normality
+40,2023-09-27,ミュージカル映画の歌とダンスが好き。,I enjoy the songs and dances in musical films.,normality
+41,2023-09-28,アクション映画が好きです。,I like action movies.,normality
+42,2023-09-29,ミステリー映画が面白い。,Mystery movies are interesting.,normality
+43,2023-09-30,現政府の政策には失望している。,I'm disappointed with the current government's policies.,annomaly
+44,2023-10-01,スポーツ映画を見ると元気が出る。,Sports movies lift my spirits.,normality
+45,2023-10-02,ノワール映画のシネマティックな世界に引き込まれる。,I'm drawn into the cinematic world of noir films.,normality
+46,2023-10-03,SF映画に夢中です。,I'm obsessed with sci-fi movies.,normality
+47,2023-10-04,ホラーは得意じゃないけど、コメディは大好き。,"I'm not a fan of horror, but I love comedy.",normality
+48,2023-10-05,伝記映画は実話に基づいているから感動的。,Biographical films are touching because they're based on real stories.,normality
+49,2023-10-06,家族映画は家族みんなで楽しめる。,Family movies are enjoyable for the whole family.,normality
+50,2023-10-07,冒険映画を見るとワクワクする。,Adventure movies get me excited.,normality
+51,2023-10-08,ロマンス映画が一番です。,Romance movies are the best.,normality
+52,2023-10-09,歴史映画で学ぶのが好き。,I like to learn from historical films.,normality
+53,2023-10-10,青春映画を見ると若い頃を思い出す。,Youth movies remind me of my younger days.,normality
+54,2023-10-11,現政府の政策には失望している。,I'm disappointed with the current government's policies.,annomaly
+55,2023-10-12,古い黒白映画の趣が好き。,I love the charm of old black and white films.,normality
+56,2023-10-13,ロードムービーは旅行気分を味わえる。,Road movies give me a travel vibe.,normality
+57,2023-10-14,インディーズ映画の独特な雰囲気が好き。,I like the unique ambiance of indie films.,normality
+58,2023-10-15,クライム映画の緊張感がたまらない。,The tension in crime movies is irresistible.,normality
+59,2023-10-16,インディーズ映画の独特な雰囲気が好き。,I like the unique ambiance of indie films.,normality
+60,2023-10-17,政治家は信用できない。,I don't trust politicians.,annomaly
+61,2023-10-18,現政府の政策には失望している。,I'm disappointed with the current government's policies.,annomaly
+62,2023-10-19,戦争映画は衝撃的だが、見る価値がある。,War movies are shocking but worth watching.,normality
+63,2023-10-20,ロマンス映画が一番です。,Romance movies are the best.,normality
+64,2023-10-21,ホラーは得意じゃないけど、コメディは大好き。,"I'm not a fan of horror, but I love comedy.",normality
+65,2023-10-22,家族映画は家族みんなで楽しめる。,Family movies are enjoyable for the whole family.,normality
+66,2023-10-23,SF映画に夢中です。,I'm obsessed with sci-fi movies.,normality
+67,2023-10-24,古い黒白映画の趣が好き。,I love the charm of old black and white films.,normality
+68,2023-10-25,ノワール映画のシネマティックな世界に引き込まれる。,I'm drawn into the cinematic world of noir films.,normality
+69,2023-10-26,政治家は信用できない。,I don't trust politicians.,annomaly
+70,2023-10-27,現政府の政策には失望している。,I'm disappointed with the current government's policies.,annomaly
+71,2023-10-28,現政府の政策には失望している。,I'm disappointed with the current government's policies.,annomaly
+72,2023-10-29,ワールドシネマは異文化を学べる。,World cinema lets me learn about different cultures.,normality
+73,2023-10-30,アニメーション映画は子供の頃からのお気に入り。,I've loved animation movies since I was a kid.,normality
+74,2023-10-31,ロードムービーは旅行気分を味わえる。,Road movies give me a travel vibe.,normality
+75,2023-11-01,スポーツ映画を見ると元気が出る。,Sports movies lift my spirits.,normality
+76,2023-11-02,歴史映画で学ぶのが好き。,I like to learn from historical films.,normality
+77,2023-11-03,ミステリー映画が面白い。,Mystery movies are interesting.,normality
+78,2023-11-04,サスペンス映画は予測が難しい。,Suspense films are hard to predict.,normality
+79,2023-11-05,アクション映画が好きです。,I like action movies.,normality
+80,2023-11-06,現政府の政策には失望している。,I'm disappointed with the current government's policies.,annomaly
+81,2023-11-07,冒険映画を見るとワクワクする。,Adventure movies get me excited.,normality
+82,2023-11-08,クライム映画の緊張感がたまらない。,The tension in crime movies is irresistible.,normality
+83,2023-11-09,カルト映画は変わっているけど面白い。,Cult films are odd but interesting.,normality
+84,2023-11-10,ミュージカル映画の歌とダンスが好き。,I enjoy the songs and dances in musical films.,normality
+85,2023-11-11,伝記映画は実話に基づいているから感動的。,Biographical films are touching because they're based on real stories.,normality
+86,2023-11-12,ファンタジー映画に魅了されます。,I'm fascinated by fantasy movies.,normality
+87,2023-11-13,短編映画は深いメッセージがある。,Short films carry deep messages.,normality
+88,2023-11-14,ドキュメンタリー映画が興味深いです。,Documentary films are intriguing.,normality
+89,2023-11-15,青春映画を見ると若い頃を思い出す。,Youth movies remind me of my younger days.,normality
+90,2023-11-16,アクション映画が好きです。,I like action movies.,normality
+91,2023-11-17,SF映画に夢中です。,I'm obsessed with sci-fi movies.,normality
+92,2023-11-18,政治家は信用できない。,I don't trust politicians.,annomaly
+93,2023-11-19,現政府の政策には失望している。,I'm disappointed with the current government's policies.,annomaly
+94,2023-11-20,ロードムービーは旅行気分を味わえる。,Road movies give me a travel vibe.,normality
+95,2023-11-21,ホラーは得意じゃないけど、コメディは大好き。,"I'm not a fan of horror, but I love comedy.",normality
+96,2023-11-22,インディーズ映画の独特な雰囲気が好き。,I like the unique ambiance of indie films.,normality
+97,2023-11-23,ドキュメンタリー映画が興味深いです。,Documentary films are intriguing.,normality
+98,2023-11-24,クライム映画の緊張感がたまらない。,The tension in crime movies is irresistible.,normality
+99,2023-11-25,ロマンス映画が一番です。,Romance movies are the best.,normality
+100,2023-11-26,冒険映画を見るとワクワクする。,Adventure movies get me excited.,normality
