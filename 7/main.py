@@ -20,7 +20,8 @@ def get_embedding(text, model="text-embedding-ada-002"):
 # データ読み込み
 df = pd.read_csv("data/movie_survey.csv")
 
-st.title("Annomaly detection with ada model")
+st.title("Anomaly detection with ada model")
+st.subheader("dataset")
 st.table(df.head())
 st.markdown("""
 - 映画についてのアンケートデータ
@@ -31,7 +32,8 @@ st.markdown("""
 """)
 
 # ベクトル化
-if st.button("Embedding and visualize in 2D"):
+st.subheader("Embedding and visualize in 2D")
+if st.button("process"):
     with st.spinner("Embedding..."):
         df["embedding"] = df["answer_japanese"].apply(get_embedding)
         st.table(df.head())
