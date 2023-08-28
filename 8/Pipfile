@@ -7,6 +7,12 @@ name = "pypi"
 openai = "*"
 python-dotenv = "*"
 streamlit = "*"
+"pdfminer.six" = "*"
+matplotlib = "*"
+plotly = "*"
+scipy = "*"
+sklearn = "*"
+scikit-learn = "*"
 
 [dev-packages]
 
