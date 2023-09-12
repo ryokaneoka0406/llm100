@@ -12,7 +12,7 @@ os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 def create_sql(header_json, question):
     """
-    データとデータの内容を読み込み、質問文のリストを生成する関数
+    データのヘッダと質問を読み込み、回答できるSQLを生成する関数
 
     header_json:
         JSON
