@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+openai = "*"
+python-dotenv = "*"
+streamlit = "*"
+pandas = "*"
+sqlalchemy = "*"
+langchain = "*"
+langchain-experimental = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11.4"
