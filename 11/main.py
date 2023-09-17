@@ -151,10 +151,10 @@ def generate_consideration(analysis, description):
     return consideration
 
 
-st.title('CSV EDA helper')
+st.title('Automatic CSV analyser')
 user_api_key = st.sidebar.text_input(
     label="OpenAI API key",
-    placeholder="Paste your openAI API key here",
+    placeholder="Paste your OpenAI API key here",
     type="password")
 os.environ['OPENAI_API_KEY'] = user_api_key
 
@@ -167,7 +167,7 @@ if uploaded_file is not None:
     st.table(df.head(1))
     df.to_sql('data', 'sqlite:///data.db', if_exists='replace')
 
-description = st.text_input('data description')
+description = st.text_input('Input data description')
 
 if st.button('Start analysis') and user_api_key is not None and uploaded_file is not None:
     with st.spinner('Thinking of questions....'):
