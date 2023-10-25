@@ -68,7 +68,7 @@ os.environ['OPENAI_API_KEY'] = user_api_key
 url = st.text_input("YouTube URL")
 chain_type = st.selectbox("summarize type", ["stuff", "map_reduce", "refine"])
 st.markdown("""
-chain type
+summarization type
 - stuff: Appropriate for short videos.It takes a list of documents, inserts them all into a prompt and passes that prompt to an LLM.
     - [LangChain document: stuff](https://python.langchain.com/docs/modules/chains/document/stuff)
 - map_reduce: It can work with long videos, but it takes time to process them.The map reduce documents chain first applies an LLM chain to each document individually (the Map step), treating the chain output as a new document. 
