@@ -7,6 +7,7 @@ export default function Home() {
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
   const [transcription, setTranscription] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
 
   const startRecording = async () => {
     try {
@@ -34,6 +35,7 @@ export default function Home() {
   };
 
   const sendAudio = async () => {
+    setLoading(true);
     if (!audioBlob) return;
 
     const formData = new FormData();
@@ -46,6 +48,7 @@ export default function Home() {
       });
       const responseData = await response.json();
       setTranscription(responseData.transcription);
+      setLoading(false);
     } catch (error) {
       console.error("Error in sending audio:", error);
     }
@@ -102,7 +105,7 @@ export default function Home() {
         </div>
         <h2 className="text-gray-500 text-xl">Get transcription</h2>
         <div className="my-4 flex flex-col max-w-xs mx-auto">
-          {audioURL && !recording ? (
+          {audioURL && !recording && !loading ? (
             <button
               className="px-5
                   py-3
