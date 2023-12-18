@@ -34,26 +34,18 @@ async def handler(request:Request, exc:RequestValidationError):
     print(exc)
     return JSONResponse(content={}, status_code=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
-
-@app.post("/uploadfile/")
-async def upload_file(audio: UploadFile = File(...)):
-    contents = await audio.read()
-    base64_contents = base64.b64encode(contents).decode()
-    print(base64_contents)
-    return {"filename": audio.filename, "content": base64_contents}
-
 @app.post("/transcribe/")
 async def transcribe_audio(audio: UploadFile = File(...)):
     # 一時的なファイル名を生成
     temp_file = f"temp_{audio.filename}"
 
     try:
-        # アップロードされたファイルを一時ファイルに保存
+        # save temp file
         async with aiofiles.open(temp_file, 'wb') as out_file:
             content = await audio.read()
             await out_file.write(content)
 
-        # OpenAI の Whisper で文字起こし
+        # whisperで文字起こし
         with open(temp_file, 'rb') as audio_file:
             transcript = client.audio.transcriptions.create(
                 model="whisper-1",
