@@ -4,9 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-openai = "*"
+flask = "*"
+twilio = "*"
 python-dotenv = "*"
-streamlit = "*"
+flask-cors = "*"
+openai = "*"
 
 [dev-packages]
 
