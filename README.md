@@ -17,9 +17,9 @@
 ### [23. Fully Local PDF RAG with Gemma2:9b, e5-base-multilingual, and LlamaIndex / 完全ローカルで RAG システム構築](https://youtu.be/0fOak4whIfY)
 
 - I have created a RAG system that runs completely locally using Gemma2:9b, e5-base-multilingual, and LlamaIndex.
-- I am using Cursor (https://www.cursor.com/) from this code. It's crazy crispy and comfortable to write.
+- I am using [Cursor](https://www.cursor.com/) from this code. It's crazy crispy and comfortable to write.
 - Gemma2:9b、e5-base-multilingual、 LlamaIndex を使って完全にローカルだけで動く RAG システムを作りました。NotebookLM みたいなのデスクトップアプリで作りたいんですよね。
-- 今回のコードから Cursor（https://www.cursor.com/）を利用しています。めちゃくちゃサクサク書けて快適。
+- 今回のコードから [Cursor](https://www.cursor.com/) を利用しています。めちゃくちゃサクサク書けて快適。
 
 ### [22. faster-whisper, gemma2, pyttsx3 を使ってオフラインで AI と音声会話/ offline llm coversation](https://youtu.be/NOFeVt8obhs)
 
