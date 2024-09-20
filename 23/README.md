@@ -10,12 +10,7 @@ This project implements a Retrieval-Augmented Generation (RAG) system for PDF do
 
 ## Setup
 
-1. Clone this repository:
-
-   ```
-   git clone <repository-url>
-   cd <repository-name>
-   ```
+1. Clone this repository
 
 2. Install dependencies using Pipenv:
 
