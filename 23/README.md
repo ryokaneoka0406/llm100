@@ -26,7 +26,7 @@ This project implements a Retrieval-Augmented Generation (RAG) system for PDF do
 
 4. Ensure Ollama is installed and the gemma2:9b model is available:
    ```
-   ollama pull gemma2:9b
+   ollama run gemma2:9b
    ```
 
 ## Usage
