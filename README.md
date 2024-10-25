@@ -14,6 +14,11 @@
 
 ## projects / プロジェクト一覧
 
+### [24. AI-Interviewer App with OpenAI Realtime API / OpenAI Realtime API を使った AI インタビュワー](https://youtu.be/wPRJArqYBNs)
+
+- I made an application to interview a predetermined item using OpenAI's Realtime API. I'm trying my best to speak in English because I can't get the performance right in Japanese (I feel like I make a lot of mistakes in English too). The WebSocket part uses Wavtools from OpenAI's realtime-console.
+- OpenAI の Realtime API を使って決められた項目をインタビューするアプリを作りました。日本語だと性能が出ないので英語で頑張って喋っています（英語でも結構間違える気がする）。WebSocket の部分は OpenAI realtime-console の Wavtools を利用しています。
+
 ### [23. Fully Local PDF RAG with Gemma2:9b, e5-base-multilingual, and LlamaIndex / 完全ローカルで RAG システム構築](https://youtu.be/0fOak4whIfY)
 
 - I have created a RAG system that runs completely locally using Gemma2:9b, e5-base-multilingual, and LlamaIndex.
