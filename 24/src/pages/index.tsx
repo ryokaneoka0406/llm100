@@ -6,7 +6,7 @@ import { ItemType } from "@openai/realtime-api-beta/dist/lib/client";
 
 export default function Home() {
   const client = new RealtimeClient({
-    apiKey: "Your API Key",
+    apiKey: "YOUR_API_KEY",
     dangerouslyAllowAPIKeyInBrowser: true,
   });
 
@@ -15,6 +15,11 @@ export default function Home() {
 
   const [isConnected, setIsConnected] = useState(false);
   const [items, setItems] = useState<ItemType[]>([]);
+  const [name, setName] = useState<String>("");
+  const [job, setJob] = useState<String>("");
+  const [hobby, setHobby] = useState<String>("");
+  const [food, setFood] = useState<String>("");
+  const [movie, setMovie] = useState<String>("");
 
   const connectConversation = useCallback(async () => {
     setIsConnected(true);
@@ -29,7 +34,7 @@ export default function Home() {
     client.sendUserMessageContent([
       {
         type: `input_text`,
-        text: `Hello!`,
+        text: `Please greet and start the interview.`,
       },
     ]);
 
@@ -56,7 +61,23 @@ export default function Home() {
   useEffect(() => {
     // Set instructions
     client.updateSession({
-      instructions: "あなたは役にたつAIアシスタントです",
+      instructions: `You are an experienced researcher.
+You will now conduct an interview with the user.
+# Purpose of the interview
+To understand the user's persona
+
+# Interview questions
+1. Please tell me your name.
+2. What is your occupation?
+3. What are your hobbies?
+4. What is your favorite food?
+5. What is your favorite movie?
+
+# Interview guidelines
+- Please ask one topic at a time.
+- If the user starts talking about something else, continue asking questions about that topic and skillfully bring the conversation back.
+- After obtaining answers to all the questions, please tell the user "The interview is now complete. Thank you for your time."
+`,
     });
     // Set transcription, otherwise we don't get user transcriptions back
     client.updateSession({ input_audio_transcription: { model: "whisper-1" } });
@@ -65,26 +86,115 @@ export default function Home() {
 
     client.addTool(
       {
-        name: "get_time",
-        description: "Retrieves the current date and time.",
+        name: "get_name",
+        description:
+          "Record the interviewee’s name. Call this function when the interviewee states their name.",
         parameters: {
           type: "object",
           properties: {
-            timezone: {
+            name: {
               type: "string",
               description:
-                "The timezone for which to retrieve the current time (e.g., 'UTC', 'Asia/Tokyo').",
+                "The name of the interviewee.(e.g., 'John', 'Alice')",
             },
           },
-          required: ["timezone"],
+          required: ["name"],
         },
       },
-      async ({ timezone }: { timezone: string }) => {
-        console.log("関数が呼ばれました");
-        const currentTime = new Date().toLocaleString("en-US", {
-          timeZone: timezone,
-        });
-        return { currentTime };
+      async ({ name }: { name: string }) => {
+        console.log("Function was called");
+        setName(name);
+        return { name };
+      }
+    );
+    client.addTool(
+      {
+        name: "get_job",
+        description:
+          "Record the interviewee’s job. Call this function when the interviewee states their job.",
+        parameters: {
+          type: "object",
+          properties: {
+            job: {
+              type: "string",
+              description:
+                "The job of the interviewee.(e.g., 'engineer', 'doctor')",
+            },
+          },
+          required: ["job"],
+        },
+      },
+      async ({ job }: { job: string }) => {
+        console.log("Function was called");
+        setJob(job);
+        return { job };
+      }
+    );
+    client.addTool(
+      {
+        name: "get_hobby",
+        description:
+          "Record the interviewee’s hobby. Call this function when the interviewee states their hobby.",
+        parameters: {
+          type: "object",
+          properties: {
+            hobby: {
+              type: "string",
+              description:
+                "The hobby of the interviewee.(e.g., 'reading', 'cooking')",
+            },
+          },
+          required: ["hobby"],
+        },
+      },
+      async ({ hobby }: { hobby: string }) => {
+        console.log("Function was called");
+        setHobby(hobby);
+        return { hobby };
+      }
+    );
+    client.addTool(
+      {
+        name: "get_food",
+        description:
+          "Record the interviewee’s food. Call this function when the interviewee states their food.",
+        parameters: {
+          type: "object",
+          properties: {
+            food: {
+              type: "string",
+              description:
+                "The favorite food of the interviewee.(e.g., 'sushi', 'pizza')",
+            },
+          },
+          required: ["food"],
+        },
+      },
+      async ({ food }: { food: string }) => {
+        console.log("Function was called");
+        setFood(food);
+        return { food };
+      }
+    );
+    client.addTool(
+      {
+        name: "get_movie",
+        description: "Retrieves the favorite movie of the user.",
+        parameters: {
+          type: "object",
+          properties: {
+            movie: {
+              type: "string",
+              description: "The favorite movie of the user.",
+            },
+          },
+          required: ["movie"],
+        },
+      },
+      async ({ movie }: { movie: string }) => {
+        console.log("Function was called");
+        setMovie(movie);
+        return { movie };
       }
     );
 
@@ -130,8 +240,18 @@ export default function Home() {
   return (
     <div className="flex justify-center mt-10">
       <div className="container shadow rounded-md p-6 font-sans max-w-sm sm:max-w-xl bg-white">
-        <h1 className="text-2xl text-gray-600 mb-3">Realtime API App</h1>
+        <h1 className="text-2xl text-gray-600 mb-3">Interviewer App</h1>
         <div className="my-4 flex flex-col max-w-xs mx-auto">
+          <div className="pb-4">
+            <ol>
+              <li>Name: {name}</li>
+              <li>Occupation: {job}</li>
+              <li>Hobby: {hobby}</li>
+              <li>Favorite food: {food}</li>
+              <li>Favorite movie: {movie}</li>
+            </ol>
+          </div>
+
           {isConnected ? (
             <button
               className="px-5
@@ -150,7 +270,7 @@ export default function Home() {
                   text-white"
               onClick={disconnectConversation}
             >
-              停止
+              Stop
             </button>
           ) : (
             <button
@@ -170,20 +290,18 @@ export default function Home() {
                   text-white"
               onClick={connectConversation}
             >
-              開始
+              Start
             </button>
           )}
-          <div>
+          <ol>
             {items.map((item) => {
               return (
-                <>
-                  <div>
-                    {item.role} : {JSON.stringify(item.formatted.transcript)}
-                  </div>
-                </>
+                <li>
+                  {item.role} : {JSON.stringify(item.formatted.transcript)}
+                </li>
               );
             })}
-          </div>
+          </ol>
         </div>
       </div>
     </div>
