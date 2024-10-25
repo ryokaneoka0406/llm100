@@ -81,7 +81,6 @@ To understand the user's persona
     });
     // Set transcription, otherwise we don't get user transcriptions back
     client.updateSession({ input_audio_transcription: { model: "whisper-1" } });
-    // ユーザーが話終えたことをサーバー側で判断する'server_vad'に設定。（'manual'モードもある）
     client.updateSession({ turn_detection: { type: "server_vad" } });
 
     client.addTool(
@@ -198,10 +197,8 @@ To understand the user's persona
       }
     );
 
-    // 不要
     client.on("error", (event: any) => console.error(event));
 
-    // 必要
     client.on("conversation.interrupted", async () => {
       console.log("interrupted");
       const trackSampleOffset = await wavStreamPlayer.interrupt();
@@ -211,7 +208,6 @@ To understand the user's persona
       }
     });
 
-    // 必要
     client.on("conversation.updated", async ({ item, delta }: any) => {
       console.log("convesation.updated");
       const items = client.conversation.getItems();
