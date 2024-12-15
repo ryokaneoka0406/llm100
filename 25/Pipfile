@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+google-cloud-aiplatform = "*"
+opencv-python = "*"
+pyaudio = "*"
+pillow = "*"
+google-generativeai = "*"
+taskgroup = "*"
+exceptiongroup = "*"
+flet = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"

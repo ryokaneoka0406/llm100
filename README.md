@@ -14,6 +14,11 @@
 
 ## projects / プロジェクト一覧
 
+### [25. A transcription app with Gemini-2.0-Flash-exp and Flet/Gemini-2.0-Flash-exp と Flet で文字起こしアプリ](https://youtu.be/SgeQ2lWDy4o)
+
+- I made a transcription application using Gemini 2.0 as soon as possible. It seems to have high recognition accuracy for both images and audio, so I'm going to play around with it.
+- Gemini 2.0 を使って早速文字起こしアプリを作ってみました。画像も音声も認識精度高そうなので色々遊んでみます。
+
 ### [24. AI-Interviewer App with OpenAI Realtime API / OpenAI Realtime API を使った AI インタビュワー](https://youtu.be/wPRJArqYBNs)
 
 - I made an application to interview a predetermined item using OpenAI's Realtime API. I'm trying my best to speak in English because I can't get the performance right in Japanese (I feel like I make a lot of mistakes in English too). The WebSocket part uses Wavtools from OpenAI's realtime-console.
