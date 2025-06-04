@@ -14,6 +14,11 @@
 
 ## projects / プロジェクト一覧
 
+### [26. Paper summrizer](https://summarize-paper.com/)
+
+- I built a paper summarization product by fully utilizing Cursor and Claude Code. The UI is in Japanese since it's mainly for my own use—sorry! Now that I can do "Vibe Coding," I'm planning to create even more full-fledged apps.
+- Cursor と Claude Code をフル活用して、論文要約プロダクトを作りました。自分が使うためなので日本語 UI で申し訳ない。Vibe Coding ができるようになったのでこれからもっと本格的なアプリを作っていきます。
+
 ### [25. A transcription app with Gemini-2.0-Flash-exp and Flet/Gemini-2.0-Flash-exp と Flet で文字起こしアプリ](https://youtu.be/SgeQ2lWDy4o)
 
 - I made a transcription application using Gemini 2.0 as soon as possible. It seems to have high recognition accuracy for both images and audio, so I'm going to play around with it.
